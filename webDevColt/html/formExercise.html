@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Form solution</title>
+</head>
+<body>
+  <h1>Register</h1>
+
+  <form>
+    <div>
+      <label for="fname">First Name:</label>
+      <input id="fname" type="text" name="firstName" placeholder="John" required>
+      <label for="lname">Last Name:</label>
+      <input id="lname" type="text" name="lastName" placeholder="Smith" required>
+    </div>
+
+    <div>
+      <label for="male">Male</label>
+      <input id="male" type="radio" name="sex" value="male">
+      <label for="female">Female</label>
+      <input id="female" type="radio" name="sex" value="female">
+      <label for="other">Other</label>
+      <input id="other" type="radio" name="sex" value="other">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" required>
+      <label for="passw">Password:</label>
+      <input id="passw" type="password" name="password" minlength="5" maxlength="10" required>
+    </div>
+
+    <div>
+      <label>
+        Birthday:
+      <select name="month">
+        <option default selected>Month</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+      </select>
+
+      <select name="day">
+        <option default selected>Day</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+
+      <select name="year">
+        <option default selected>Year</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+      </select>
+    </label>
+    </div>
+
+    <div>
+      <label for="t&c">I agree to the terms and conditions</label>
+      <input id="t&c" name="agree" type="checkbox" value="true">
+    </div>
+
+    <div>
+      <input type="submit">
+    </div>
+
+  </form>
+
+</body>
+</html>
